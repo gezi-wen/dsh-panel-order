@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Panel Order",
+    "description": "Drag the sidebar's global panel entries to reorder them. The order is remembered across reloads."
+  }
+}

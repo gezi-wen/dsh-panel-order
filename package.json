@@ -1,0 +1,65 @@
+{
+  "name": "dsh-panel-order",
+  "version": "0.1.0",
+  "description": "Drag the sidebar's global panel entries to reorder them in DeepSeek Harness. The order is remembered across reloads.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "NOTICE",
+    "LICENSE",
+    "scripts/check.mjs"
+  ],
+  "scripts": {
+    "test": "node scripts/check.mjs"
+  },
+  "license": "Apache-2.0",
+  "author": "gezi-wen",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gezi-wen/dsh-panel-order.git"
+  },
+  "homepage": "https://github.com/gezi-wen/dsh-panel-order#readme",
+  "bugs": {
+    "url": "https://github.com/gezi-wen/dsh-panel-order/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "sidebar",
+    "drag-reorder",
+    "ui"
+  ],
+  "engines": {
+    "node": ">=18",
+    "dsh": ">=0.2.0-0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  }
+}
